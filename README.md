@@ -25,6 +25,7 @@ First,
 
 Then to push firmware over the air:
   * Add the ssh private key to this project exactly as `.ssh/id_rsa`
+  * `mix firmware`
   * `mix firmware.push --user-dir .ssh synapse-1.local`
 
 To start your Nerves app with an SD card:

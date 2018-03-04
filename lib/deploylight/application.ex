@@ -8,7 +8,8 @@ defmodule Deploylight.Application do
 
     # Define workers and child supervisors to be supervised
     children = [
-      # worker(Deploylight.Worker, [arg1, arg2, arg3]),
+      Deploylight.Blinker
+      # worker(Deploylight.Blinker, []),
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html

@@ -20,6 +20,9 @@ config :shoehorn,
   init: [:nerves_runtime, :nerves_init_gadget],
   app: Mix.Project.config()[:app]
 
+# https://github.com/nerves-project/nerves_examples/blob/master/hello_leds/config/rpi0.exs
+config :nerves_leds, names: [green: "led0"]
+
 # Import target specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 # Uncomment to use target specific configurations

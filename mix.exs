@@ -55,7 +55,8 @@ defmodule Deploylight.MixProject do
       {:shoehorn, "~> 0.2"},
       {:nerves_runtime, "~> 0.4"},
       {:nerves_init_gadget, "~> 0.2"},
-      {:nerves_network, "~> 0.3"}
+      {:nerves_network, "~> 0.3"},
+      {:nerves_leds, "~> 0.7"}
     ] ++ system(target)
   end
 
