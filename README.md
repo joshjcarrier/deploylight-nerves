@@ -24,8 +24,8 @@ First,
   * `export NERVES_NETWORK_PSK=WifiPassword`
 
 Then to push firmware over the air:
-  * `ssh-add ~/.ssh/synapse1_rsa` the ssh private key
-  * `mix firmware.push synapse-1.local`
+  * Add the ssh private key to this project exactly as `.ssh/id_rsa`
+  * `mix firmware.push --user-dir .ssh synapse-1.local`
 
 To start your Nerves app with an SD card:
   * Install dependencies with `mix deps.get`

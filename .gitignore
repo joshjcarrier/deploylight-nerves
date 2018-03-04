@@ -1,3 +1,5 @@
+.ssh/id_rsa
+.ssh/known_hosts
 
 # Created by https://www.gitignore.io/api/macos,elixir,windows,visualstudiocode
 
