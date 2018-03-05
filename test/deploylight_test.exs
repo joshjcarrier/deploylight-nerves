@@ -3,6 +3,6 @@ defmodule DeploylightTest do
   doctest Deploylight
 
   test "the truth" do
-    assert 1 + 1 == 2
+    assert "" == Deploylight.start
   end
 end

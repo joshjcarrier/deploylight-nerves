@@ -48,7 +48,10 @@ defmodule Deploylight.MixProject do
   end
 
   # Specify target specific dependencies
-  defp deps("host"), do: []
+  defp deps("host"), do: [
+    {:httpoison, "~> 1.0"},
+    {:poison, "~> 3.1"}
+  ]
 
   defp deps(target) do
     [
@@ -56,7 +59,9 @@ defmodule Deploylight.MixProject do
       {:nerves_runtime, "~> 0.4"},
       {:nerves_init_gadget, "~> 0.2"},
       {:nerves_network, "~> 0.3"},
-      {:nerves_leds, "~> 0.7"}
+      {:nerves_leds, "~> 0.7"},
+      {:httpoison, "~> 1.0"},
+      {:poison, "~> 3.1"}
     ] ++ system(target)
   end
 
